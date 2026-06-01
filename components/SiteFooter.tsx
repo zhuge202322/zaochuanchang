@@ -1,5 +1,7 @@
 import Link from "next/link";
-import { Download, Mail, MapPin, Ship } from "lucide-react";
+import Image from "next/image";
+import { Download, Mail, MapPin } from "lucide-react";
+import { companyProfile } from "@/lib/site-data";
 
 const links = [
   { href: "/products", label: "Products" },
@@ -16,17 +18,14 @@ export function SiteFooter() {
         <div>
           <Link className="brand brand--footer" href="/">
             <span className="brand-mark">
-              <Ship size={20} />
+              <Image src="/images/jiabo-you-want-mark.jpg" alt="JIABO YOU WANT logo" width={42} height={42} />
             </span>
             <span>
-              <strong>JIABO</strong>
-              <small>Marine Instruments</small>
+              <strong>{companyProfile.shortName}</strong>
+              <small>{companyProfile.descriptor}</small>
             </span>
           </Link>
-          <p>
-            Taizhou Jiabo Instrument Technology Co., Ltd. supplies shipboard instruments,
-            level control products, valve assemblies and monitoring cabinets for export projects.
-          </p>
+          <p>{companyProfile.profile}</p>
         </div>
         <div>
           <h3>Navigation</h3>
@@ -49,18 +48,18 @@ export function SiteFooter() {
         <div>
           <h3>Project Desk</h3>
           <p className="footer-contact">
-            <MapPin size={16} /> Taizhou, Jiangsu, China
+            <MapPin size={16} /> {companyProfile.address}
           </p>
           <Link className="footer-action" href="/contact">
             <Mail size={16} /> Send inquiry
           </Link>
-          <a className="footer-action" href="/downloads/jiabo-product-catalog.xls" download>
-            <Download size={16} /> Product catalog
+          <a className="footer-action" href="/downloads/jiabo-you-want-product-profile.pdf" download>
+            <Download size={16} /> Product brochure
           </a>
         </div>
       </div>
       <div className="footer-bottom shell">
-        <span>JIABO marine instrumentation website</span>
+        <span>{companyProfile.shortName} marine instrumentation website</span>
         <span>Built for industrial export product discovery</span>
       </div>
     </footer>

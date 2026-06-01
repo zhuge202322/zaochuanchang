@@ -6,6 +6,7 @@ import { ProductCard } from "@/components/ProductCard";
 import { SectionHeading } from "@/components/SectionHeading";
 import {
   categories,
+  companyProfile,
   factoryGallery,
   getProductsBySlugs,
   processSteps,
@@ -65,11 +66,11 @@ export default function Home() {
         </div>
         <div className="shell hero__content">
           <div className="hero__copy">
-            <p className="eyebrow">Taizhou Jiabo Instrument Technology Co., Ltd.</p>
+            <p className="eyebrow">{companyProfile.name}</p>
             <h1>Marine Instrumentation & Valve Control Systems</h1>
             <p>
-              Pressure gauges, level measurement products, shipboard valve assemblies and
-              monitoring cabinets built around real vessel applications and export RFQ workflows.
+              Standard and customized marine accessories, automation instruments, valves and
+              monitoring cabinets for overseas shipbuilding, repair and equipment supply projects.
             </p>
             <div className="hero__actions">
               <Link className="btn btn--primary" href="/products">
@@ -78,8 +79,8 @@ export default function Home() {
               <Link className="btn btn--secondary" href="/contact">
                 <Mail size={18} /> Send RFQ
               </Link>
-              <a className="btn btn--secondary" href="/downloads/jiabo-product-catalog.xls" download>
-                <Download size={18} /> Catalog
+              <a className="btn btn--secondary" href="/downloads/jiabo-you-want-product-profile.pdf" download>
+                <Download size={18} /> Brochure
               </a>
             </div>
           </div>
@@ -103,8 +104,8 @@ export default function Home() {
       <section className="metric-strip">
         <div className="shell metric-strip__grid">
           <div className="metric">
-            <strong>5</strong>
-            <span>Core marine product families</span>
+            <strong>10y</strong>
+            <span>R&D and manufacturing experience behind the supply chain</span>
           </div>
           <div className="metric">
             <strong>47</strong>
@@ -115,8 +116,8 @@ export default function Home() {
             <span>Factory and inspection images prepared</span>
           </div>
           <div className="metric">
-            <strong>1</strong>
-            <span>RFQ path for instruments, valves and systems</span>
+            <strong>OEM</strong>
+            <span>Customized product support for overseas requirements</span>
           </div>
         </div>
       </section>
@@ -161,28 +162,38 @@ export default function Home() {
       </section>
 
       <section className="section section--dark">
-        <div className="shell split">
-          <div>
+        <div className="shell manufacturing-proof">
+          <div className="manufacturing-proof__copy">
             <SectionHeading
               eyebrow="Manufacturing proof"
               title="A factory story built from real workshop and inspection photos"
               text="The website uses the supplied workshop, inspection and control console images to create an industrial trust path before the RFQ form."
             />
-            <ul className="proof-list">
-              {processSteps.map((step) => (
-                <li key={step}>
-                  <CheckCircle2 size={19} />
-                  <span>{step}</span>
-                </li>
-              ))}
-            </ul>
           </div>
-          <div className="image-stack">
-            <span className="image-frame image-frame--tall">
-              <Image src={factoryGallery[2].image} alt={factoryGallery[2].title} fill sizes="(max-width: 860px) 50vw, 34vw" />
+          <ul className="proof-list manufacturing-proof__list">
+            {processSteps.map((step) => (
+              <li key={step}>
+                <CheckCircle2 size={19} />
+                <span>{step}</span>
+              </li>
+            ))}
+          </ul>
+          <div className="factory-showcase factory-showcase--dark">
+            <span className="image-frame image-frame--wide">
+              <Image
+                src={factoryGallery[2].image}
+                alt={factoryGallery[2].title}
+                fill
+                sizes="(max-width: 860px) 100vw, 50vw"
+              />
             </span>
-            <span className="image-frame image-frame--short">
-              <Image src={factoryGallery[3].image} alt={factoryGallery[3].title} fill sizes="(max-width: 860px) 50vw, 22vw" />
+            <span className="image-frame image-frame--wide">
+              <Image
+                src={factoryGallery[3].image}
+                alt={factoryGallery[3].title}
+                fill
+                sizes="(max-width: 860px) 100vw, 50vw"
+              />
             </span>
           </div>
         </div>

@@ -5,5 +5,6 @@ dist
 .DS_Store
 *.log
 *.rar
+*.zip
 .env*
 !.env.example

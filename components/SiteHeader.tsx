@@ -1,9 +1,11 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { Mail, Menu, Ship, X } from "lucide-react";
+import { Download, Mail, Menu, X } from "lucide-react";
 import { useState } from "react";
+import { companyProfile } from "@/lib/site-data";
 
 const navItems = [
   { href: "/products", label: "Products" },
@@ -22,11 +24,11 @@ export function SiteHeader() {
       <div className="shell header-inner">
         <Link className="brand" href="/" onClick={() => setOpen(false)}>
           <span className="brand-mark">
-            <Ship size={21} />
+            <Image src="/images/jiabo-you-want-mark.jpg" alt="JIABO YOU WANT logo" width={42} height={42} />
           </span>
           <span>
-            <strong>JIABO</strong>
-            <small>Marine Instruments</small>
+            <strong>{companyProfile.shortName}</strong>
+            <small>{companyProfile.descriptor}</small>
           </span>
         </Link>
         <nav className="desktop-nav" aria-label="Main navigation">
@@ -40,6 +42,9 @@ export function SiteHeader() {
             </Link>
           ))}
         </nav>
+        <a className="header-download" href="/downloads/jiabo-you-want-product-profile.pdf" download>
+          <Download size={16} /> Product Brochure
+        </a>
         <Link className="header-cta" href="/contact">
           <Mail size={16} /> RFQ
         </Link>
@@ -60,6 +65,9 @@ export function SiteHeader() {
               {item.label}
             </Link>
           ))}
+          <a href="/downloads/jiabo-you-want-product-profile.pdf" download onClick={() => setOpen(false)}>
+            Product Brochure
+          </a>
           <Link href="/contact" onClick={() => setOpen(false)}>
             RFQ Contact
           </Link>

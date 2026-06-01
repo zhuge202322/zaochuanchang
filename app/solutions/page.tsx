@@ -45,7 +45,7 @@ export default function SolutionsPage() {
             {solutions.map((solution) => (
               <article className="solution-card" id={solution.slug} key={solution.slug}>
                 <span className="solution-card__image">
-                  <Image src={solution.image} alt={solution.title} fill sizes="(max-width: 1100px) 100vw, 32vw" />
+                  <Image src={solution.image} alt={solution.title} fill sizes="(max-width: 1100px) 100vw, 50vw" />
                 </span>
                 <div className="solution-card__body">
                   <span className="eyebrow">Marine solution</span>

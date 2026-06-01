@@ -5,6 +5,7 @@ import { IconBadge } from "@/components/IconBadge";
 import { ProductCard } from "@/components/ProductCard";
 import {
   categories,
+  companyProfile,
   getProductsByCategory,
   products,
 } from "@/lib/site-data";
@@ -12,7 +13,7 @@ import {
 export const metadata = {
   title: "Product Center",
   description:
-    "Marine pressure, temperature, level measurement, valve, detection and control alarm products from Jiabo.",
+    `Marine pressure, temperature, level measurement, valve, detection and control alarm products from ${companyProfile.shortName}.`,
 };
 
 export default function ProductsPage() {

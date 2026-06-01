@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Download, FileText, ListChecks, Mail, Ruler } from "lucide-react";
+import { BadgeCheck, Download, FileText, ListChecks, Mail, Ruler } from "lucide-react";
 import { SectionHeading } from "@/components/SectionHeading";
+import { companyProfile } from "@/lib/site-data";
 
 export const metadata = {
   title: "Resources",
   description:
-    "Product catalog download, RFQ checklist and selection notes for Jiabo marine instruments.",
+    `Product brochure, company documents, RFQ checklist and selection notes for ${companyProfile.shortName}.`,
 };
 
 export default function ResourcesPage() {
@@ -25,7 +26,7 @@ export default function ResourcesPage() {
         </div>
         <div className="shell page-hero__content">
           <p className="eyebrow">Resources</p>
-          <h1>Catalog, selection data and RFQ preparation for marine product buyers</h1>
+          <h1>Product brochure, company documents and RFQ preparation for marine product buyers</h1>
           <p>
             This page keeps downloadable and copy ready technical request information close to the product pages.
           </p>
@@ -37,24 +38,24 @@ export default function ResourcesPage() {
           <SectionHeading
             eyebrow="Download and prepare"
             title="Fast materials for the first export conversation"
-            text="The original product catalog file from the supplied package is preserved, and the page adds structured RFQ guidance for buyers."
+            text="The supplied PDF brochure is available for direct download, with company profile, product references and RFQ guidance kept close to the product pages."
           />
           <div className="resource-grid">
-            <a className="resource-card" href="/downloads/jiabo-product-catalog.xls" download>
+            <a className="resource-card" href="/downloads/jiabo-you-want-product-profile.pdf" download>
               <Download size={30} />
-              <h3>Product catalog</h3>
-              <p>Download the supplied Jiabo product catalog spreadsheet for model reference.</p>
+              <h3>Product brochure</h3>
+              <p>Download the supplied PDF for company introduction and full product reference.</p>
             </a>
             <Link className="resource-card" href="/contact">
               <Mail size={30} />
               <h3>RFQ form</h3>
               <p>Send product type, model, range, medium, connection and quantity in one place.</p>
             </Link>
-            <Link className="resource-card" href="/products">
-              <FileText size={30} />
-              <h3>Product pages</h3>
-              <p>Use each detail page to collect application and specification notes before inquiry.</p>
-            </Link>
+            <a className="resource-card" href="/downloads/jiabo-you-want-business-license.pdf" download>
+              <BadgeCheck size={30} />
+              <h3>Business license</h3>
+              <p>Download the supplied company license document for supplier verification.</p>
+            </a>
           </div>
         </div>
       </section>

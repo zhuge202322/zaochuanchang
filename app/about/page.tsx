@@ -2,11 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Factory, Ship, Wrench } from "lucide-react";
 import { SectionHeading } from "@/components/SectionHeading";
+import { companyProfile } from "@/lib/site-data";
 
 export const metadata = {
-  title: "About Jiabo",
+  title: "About Jiabo You Want",
   description:
-    "About Taizhou Jiabo Instrument Technology Co., Ltd. and its marine instrument product focus.",
+    `About ${companyProfile.name} and its marine accessories, automation instruments and overseas trade focus.`,
 };
 
 export default function AboutPage() {
@@ -16,7 +17,7 @@ export default function AboutPage() {
         <div className="page-hero__image">
           <Image
             src="/images/factory/factory-06.jpg"
-            alt="Taizhou Jiabo Instrument Technology brand wall"
+            alt="Jiabo factory brand wall"
             fill
             preload
             loading="eager"
@@ -24,32 +25,38 @@ export default function AboutPage() {
           />
         </div>
         <div className="shell page-hero__content">
-          <p className="eyebrow">About Jiabo</p>
-          <h1>Marine instrument and control products from Taizhou, Jiangsu</h1>
+          <p className="eyebrow">About Jiabo You Want</p>
+          <h1>Ship parts foreign trade backed by marine instrument manufacturing experience</h1>
           <p>
-            The brand story is kept close to the supplied materials: real product photography, real factory scenes and a focused shipboard product range.
+            The company profile now reflects Jiabo You Want as the overseas market division for standard and customized ship parts.
           </p>
         </div>
       </section>
 
       <section className="section section--white">
-        <div className="shell split">
-          <div>
-            <SectionHeading
-              eyebrow="Company position"
-              title="Taizhou Jiabo Instrument Technology Co., Ltd."
-              text="Jiabo supplies pressure, temperature, level, valve, detection and control alarm products for marine equipment builders, shipyards and maintenance replacement buyers."
-            />
+        <div className="shell company-position">
+          <div className="company-position__copy">
+            <SectionHeading eyebrow="Company position" title={companyProfile.name} text={companyProfile.profile} />
             <Link className="btn btn--dark" href="/products">
               View product center <ArrowRight size={18} />
             </Link>
           </div>
-          <div className="image-stack">
-            <span className="image-frame image-frame--tall">
-              <Image src="/images/factory/factory-09.jpg" alt="Instrument assembly floor" fill sizes="(max-width: 860px) 50vw, 34vw" />
+          <div className="factory-showcase factory-showcase--about">
+            <span className="image-frame image-frame--wide">
+              <Image
+                src="/images/factory/factory-09.jpg"
+                alt="Instrument assembly floor"
+                fill
+                sizes="(max-width: 860px) 100vw, 50vw"
+              />
             </span>
-            <span className="image-frame image-frame--short">
-              <Image src="/images/factory/factory-19.jpg" alt="Inspection and control console room" fill sizes="(max-width: 860px) 50vw, 22vw" />
+            <span className="image-frame image-frame--wide">
+              <Image
+                src="/images/factory/factory-19.jpg"
+                alt="Inspection and control console room"
+                fill
+                sizes="(max-width: 860px) 100vw, 50vw"
+              />
             </span>
           </div>
         </div>
@@ -65,8 +72,8 @@ export default function AboutPage() {
           <div className="resource-grid">
             <article className="resource-card">
               <Ship size={28} />
-              <h3>Marine focused product scope</h3>
-              <p>Instruments, level products, valves and alarm systems are organized by shipboard use.</p>
+              <h3>Ship parts foreign trade</h3>
+              <p>Jiabo You Want focuses on overseas market communication, sourcing coordination and export product delivery.</p>
             </article>
             <article className="resource-card">
               <Factory size={28} />
@@ -75,8 +82,8 @@ export default function AboutPage() {
             </article>
             <article className="resource-card">
               <Wrench size={28} />
-              <h3>Replacement and project RFQ fit</h3>
-              <p>The inquiry path accepts model plates, old part photos, drawings and application notes.</p>
+              <h3>Standard and customized supply</h3>
+              <p>Standard products and customized marine accessories can be matched to specific client requirements.</p>
             </article>
           </div>
         </div>

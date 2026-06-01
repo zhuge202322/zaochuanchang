@@ -30,6 +30,16 @@ export type Solution = {
   productSlugs: string[];
 };
 
+export const companyProfile = {
+  name: "Taizhou Jiabo You Want Import and Export Trading Co., Ltd.",
+  chineseName: "泰州市佳博有望进出口贸易有限公司",
+  shortName: "JIABO YOU WANT",
+  descriptor: "Ship Parts Foreign Trade",
+  address: "Room 336, Qituo Building, No. 8 Suzhou Road, Sanshui Subdistrict, Taizhou, Jiangsu, China",
+  profile:
+    "Taizhou Jiabo Technology Co., Ltd. has nearly a decade of experience in R&D and manufacturing of marine accessories and automation instruments, covering pressure gauges, sensors, thermometers, heaters, valves, flow meters, alarms and monitoring systems. Jiabo You Want is the newly established international trade division focused on overseas markets, offering both standard products and customized solutions for specific client requirements.",
+};
+
 export const categories: Category[] = [
   {
     slug: "pressure-temperature",
@@ -836,8 +846,8 @@ export const factoryGallery = [
   },
   {
     image: "/images/factory/factory-06.jpg",
-    title: "Jiabo brand wall",
-    text: "Taizhou Jiabo Instrument Technology Co., Ltd. factory identity.",
+    title: "Jiabo factory brand wall",
+    text: "Jiabo factory identity behind the Jiabo You Want international trade division.",
   },
   {
     image: "/images/factory/factory-09.jpg",

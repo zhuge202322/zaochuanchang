@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Boxes, Download, MapPin, Send, Ship, Wrench } from "lucide-react";
+import { companyProfile } from "@/lib/site-data";
 
 export const metadata = {
   title: "Contact & RFQ",
@@ -25,7 +26,7 @@ export default function ContactPage() {
           <p className="eyebrow">Contact & RFQ</p>
           <h1>Send the vessel position, model details and project requirement</h1>
           <p>
-            The inquiry form is shaped around marine product matching: product type, range, medium, connection, signal and quantity.
+            Jiabo You Want supports overseas inquiries for standard products and customized marine accessories.
           </p>
         </div>
       </section>
@@ -36,7 +37,7 @@ export default function ContactPage() {
             <h2>Project desk</h2>
             <div className="contact-line">
               <MapPin size={20} />
-              <span>Taizhou, Jiangsu, China</span>
+              <span>{companyProfile.address}</span>
             </div>
             <div className="contact-line">
               <Ship size={20} />
@@ -50,8 +51,8 @@ export default function ContactPage() {
               <Wrench size={20} />
               <span>Useful attachments: old part photo, nameplate, drawing, point list or installation position</span>
             </div>
-            <a className="btn btn--dark" href="/downloads/jiabo-product-catalog.xls" download>
-              <Download size={18} /> Download catalog
+            <a className="btn btn--dark" href="/downloads/jiabo-you-want-product-profile.pdf" download>
+              <Download size={18} /> Download brochure
             </a>
           </aside>
 
