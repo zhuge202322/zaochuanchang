@@ -27,9 +27,9 @@ export default function SolutionsPage() {
         </div>
         <div className="shell page-hero__content">
           <p className="eyebrow">Solutions</p>
-          <h1>Product combinations for shipboard monitoring, control and alarm work</h1>
+          <h1>Application-Based Solutions for Shipboard Monitoring, Control & Alarm Systems</h1>
           <p>
-            Each solution connects vessel positions to the instruments, sensors, valves and cabinets already shown in the product center.
+            Each solution brings together the instruments, sensors, valves and control cabinets required for specific onboard applications.
           </p>
         </div>
       </section>
@@ -38,8 +38,8 @@ export default function SolutionsPage() {
         <div className="shell">
           <SectionHeading
             eyebrow="Application packages"
-            title="From tank and pipeline questions to a clear RFQ list"
-            text="These solution blocks keep the website focused on how a shipyard, equipment integrator or maintenance buyer actually specifies parts."
+            title="Application-Based Solutions for Shipboard Monitoring, Control & Alarm Systems"
+            text="Each solution brings together the instruments, sensors, valves and control cabinets required for specific onboard applications."
           />
           <div className="solution-grid">
             {solutions.map((solution) => (

@@ -32,9 +32,9 @@ export default function ProductsPage() {
         </div>
         <div className="shell page-hero__content">
           <p className="eyebrow">Product center</p>
-          <h1>Shipboard instruments, valves and control cabinets in one searchable product layer</h1>
+          <h1>Marine Instruments, Valves & Control Systems</h1>
           <p>
-            Product categories follow vessel duty points so buyers can move from a ship system to the right model family quickly.
+            Browse products by application and quickly find the right solution for your vessel.
           </p>
           <div className="category-nav" aria-label="Product categories">
             {categories.map((category) => (

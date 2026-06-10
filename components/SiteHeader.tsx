@@ -27,7 +27,9 @@ export function SiteHeader() {
             <Image src="/images/jiabo-you-want-mark.jpg" alt="JIABO YOU WANT logo" width={42} height={42} />
           </span>
           <span>
-            <strong>{companyProfile.shortName}</strong>
+            <strong>
+              JIABO <span>YOU WANT</span>
+            </strong>
             <small>{companyProfile.descriptor}</small>
           </span>
         </Link>
@@ -43,10 +45,10 @@ export function SiteHeader() {
           ))}
         </nav>
         <a className="header-download" href="/downloads/jiabo-you-want-product-profile.pdf" download>
-          <Download size={16} /> Product Brochure
+          <Download size={16} /> Download Brochure
         </a>
         <Link className="header-cta" href="/contact">
-          <Mail size={16} /> RFQ
+          <Mail size={16} /> Request a Quote
         </Link>
         <button
           className="menu-button"
@@ -66,10 +68,10 @@ export function SiteHeader() {
             </Link>
           ))}
           <a href="/downloads/jiabo-you-want-product-profile.pdf" download onClick={() => setOpen(false)}>
-            Product Brochure
+            Download Brochure
           </a>
           <Link href="/contact" onClick={() => setOpen(false)}>
-            RFQ Contact
+            Request a Quote
           </Link>
         </nav>
       </div>

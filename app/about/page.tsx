@@ -26,9 +26,10 @@ export default function AboutPage() {
         </div>
         <div className="shell page-hero__content">
           <p className="eyebrow">About Jiabo You Want</p>
-          <h1>Ship parts foreign trade backed by marine instrument manufacturing experience</h1>
+          <h1>Marine Equipment Supply Backed by Manufacturing Expertise</h1>
           <p>
-            The company profile now reflects Jiabo You Want as the overseas market division for standard and customized ship parts.
+            We supply certified marine instruments, valves and control cabinets, with model matching
+            and tailored solutions for customers worldwide.
           </p>
         </div>
       </section>

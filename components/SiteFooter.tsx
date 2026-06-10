@@ -21,7 +21,9 @@ export function SiteFooter() {
               <Image src="/images/jiabo-you-want-mark.jpg" alt="JIABO YOU WANT logo" width={42} height={42} />
             </span>
             <span>
-              <strong>{companyProfile.shortName}</strong>
+              <strong>
+                JIABO <span>YOU WANT</span>
+              </strong>
               <small>{companyProfile.descriptor}</small>
             </span>
           </Link>
@@ -51,10 +53,10 @@ export function SiteFooter() {
             <MapPin size={16} /> {companyProfile.address}
           </p>
           <Link className="footer-action" href="/contact">
-            <Mail size={16} /> Send inquiry
+            <Mail size={16} /> Request a quote
           </Link>
           <a className="footer-action" href="/downloads/jiabo-you-want-product-profile.pdf" download>
-            <Download size={16} /> Product brochure
+            <Download size={16} /> Download brochure
           </a>
         </div>
       </div>

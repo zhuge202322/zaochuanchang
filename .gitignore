@@ -6,5 +6,6 @@ dist
 *.log
 *.rar
 *.zip
+*.xlsx
 .env*
 !.env.example

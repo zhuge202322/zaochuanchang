@@ -34,7 +34,7 @@ export const companyProfile = {
   name: "Taizhou Jiabo You Want Import and Export Trading Co., Ltd.",
   chineseName: "泰州市佳博有望进出口贸易有限公司",
   shortName: "JIABO YOU WANT",
-  descriptor: "Ship Parts Foreign Trade",
+  descriptor: "Marine Equipment Export & Supply",
   address: "Room 336, Qituo Building, No. 8 Suzhou Road, Sanshui Subdistrict, Taizhou, Jiangsu, China",
   profile:
     "Taizhou Jiabo Technology Co., Ltd. has nearly a decade of experience in R&D and manufacturing of marine accessories and automation instruments, covering pressure gauges, sensors, thermometers, heaters, valves, flow meters, alarms and monitoring systems. Jiabo You Want is the newly established international trade division focused on overseas markets, offering both standard products and customized solutions for specific client requirements.",
@@ -44,7 +44,7 @@ export const categories: Category[] = [
   {
     slug: "pressure-temperature",
     label: "Pressure & Temperature Instruments",
-    shortLabel: "Pressure / Temperature",
+    shortLabel: "Pressure & Temperature",
     eyebrow: "Pump room, engine room, hydraulic lines",
     intro:
       "Dial gauges, transmitters, controllers and thermometers for pressure and temperature points across marine machinery spaces.",
@@ -54,7 +54,7 @@ export const categories: Category[] = [
   {
     slug: "level-measurement",
     label: "Level Measurement & Control",
-    shortLabel: "Level Control",
+    shortLabel: "Level Measurement",
     eyebrow: "Tank, ballast, fuel and service water systems",
     intro:
       "Visual gauges, magnetic float gauges, float controllers and level transmitters built around vessel tank monitoring work.",
@@ -73,8 +73,8 @@ export const categories: Category[] = [
   },
   {
     slug: "detection-safety",
-    label: "Detection, Flow & Safety",
-    shortLabel: "Detection",
+    label: "Alarm & Detection",
+    shortLabel: "Alarm & Detection",
     eyebrow: "Flow, door state, oil pollution and field junctions",
     intro:
       "Specialized sensors and safety accessories used around pipe routes, equipment rooms and protected control points.",

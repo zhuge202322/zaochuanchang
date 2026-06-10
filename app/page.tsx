@@ -67,35 +67,35 @@ export default function Home() {
         <div className="shell hero__content">
           <div className="hero__copy">
             <p className="eyebrow">{companyProfile.name}</p>
-            <h1>Marine Instrumentation & Valve Control Systems</h1>
+            <h1>Reliable Marine Automation Solutions, Tailored to Your Vessel</h1>
             <p>
-              Standard and customized marine accessories, automation instruments, valves and
-              monitoring cabinets for overseas shipbuilding, repair and equipment supply projects.
+              Custom-engineered instruments, sensors, valve remote control and monitoring systems
+              for your vessel specifications and operating conditions.
             </p>
             <div className="hero__actions">
               <Link className="btn btn--primary" href="/products">
-                <ArrowRight size={18} /> Explore products
+                <ArrowRight size={18} /> View Products
               </Link>
               <Link className="btn btn--secondary" href="/contact">
-                <Mail size={18} /> Send RFQ
+                <Mail size={18} /> Request a Quote
               </Link>
               <a className="btn btn--secondary" href="/downloads/jiabo-you-want-product-profile.pdf" download>
-                <Download size={18} /> Brochure
+                <Download size={18} /> Download Brochure
               </a>
             </div>
           </div>
           <div className="hero__rail">
             <div>
-              <span>Product layer</span>
-              <strong>Instrument, sensor, valve and cabinet supply</strong>
+              <span>Product range</span>
+              <strong>Marine instruments, sensors, valves and control cabinets</strong>
             </div>
             <div>
-              <span>Factory proof</span>
-              <strong>Assembly floor, inspection room and system test benches</strong>
+              <span>Certified products</span>
+              <strong>Products with recognized industry certifications</strong>
             </div>
             <div>
-              <span>RFQ fit</span>
-              <strong>Model matching from photos, drawings and vessel duty points</strong>
+              <span>Custom solutions</span>
+              <strong>Model matching and tailored solutions based on photos, drawings and vessel requirements</strong>
             </div>
           </div>
         </div>
@@ -126,8 +126,8 @@ export default function Home() {
         <div className="shell">
           <SectionHeading
             eyebrow="Product matrix"
-            title="Field devices arranged by vessel duty, not generic catalog tiles"
-            text="The site groups the supplied product images into the way a shipyard or equipment buyer actually searches: pressure, temperature, tank level, valve control, detection and alarm systems."
+            title="Marine instruments, sensors, valves and control cabinets"
+            text="Browse products by application and quickly find the right solution for your vessel."
           />
           <div className="category-grid">
             {categories.map((category) => (

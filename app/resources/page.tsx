@@ -13,11 +13,11 @@ export const metadata = {
 export default function ResourcesPage() {
   return (
     <main>
-      <section className="page-hero">
+      <section className="page-hero page-hero--resources">
         <div className="page-hero__image">
           <Image
-            src="/images/products/product-24-a.jpg"
-            alt="Magnetic float level gauge"
+            src="/images/factory/factory-19.jpg"
+            alt="Marine inspection room and control equipment"
             fill
             preload
             loading="eager"
@@ -25,11 +25,28 @@ export default function ResourcesPage() {
           />
         </div>
         <div className="shell page-hero__content">
-          <p className="eyebrow">Resources</p>
-          <h1>Product brochure, company documents and RFQ preparation for marine product buyers</h1>
-          <p>
-            This page keeps downloadable and copy ready technical request information close to the product pages.
-          </p>
+          <div className="resources-hero__copy">
+            <p className="eyebrow">Resources</p>
+            <h1>Brochures, Documents & RFQ Support</h1>
+            <p>
+              Download product information, explore our company capabilities, or send us your
+              requirements for faster product matching.
+            </p>
+          </div>
+          <div className="resources-hero__panel" aria-label="Download brochure preview">
+            <span className="resources-hero__tag">Product profile</span>
+            <span className="resources-hero__cover">
+              <Image
+                src="/images/brochure-cover.jpg"
+                alt="Jiabo product brochure cover"
+                fill
+                sizes="(max-width: 860px) 52vw, 250px"
+              />
+            </span>
+            <a href="/downloads/jiabo-you-want-product-profile.pdf" download>
+              <Download size={16} /> Download Brochure
+            </a>
+          </div>
         </div>
       </section>
 
@@ -43,7 +60,7 @@ export default function ResourcesPage() {
           <div className="resource-grid">
             <a className="resource-card" href="/downloads/jiabo-you-want-product-profile.pdf" download>
               <Download size={30} />
-              <h3>Product brochure</h3>
+              <h3>Product Brochure</h3>
               <p>Download the supplied PDF for company introduction and full product reference.</p>
             </a>
             <Link className="resource-card" href="/contact">

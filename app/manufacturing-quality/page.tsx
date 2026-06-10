@@ -12,7 +12,7 @@ export const metadata = {
 export default function ManufacturingQualityPage() {
   return (
     <main>
-      <section className="page-hero">
+      <section className="page-hero page-hero--deep">
         <div className="page-hero__image">
           <Image
             src="/images/factory/factory-09.jpg"
@@ -25,9 +25,10 @@ export default function ManufacturingQualityPage() {
         </div>
         <div className="shell page-hero__content">
           <p className="eyebrow">Manufacturing & quality</p>
-          <h1>Factory, assembly and inspection content from real customer photos</h1>
+          <h1>Reliable Assembly, Inspection & System Testing</h1>
           <p>
-            The page builds confidence through workshop scale, working benches, testing rooms and project equipment instead of generic factory claims.
+            Our workshop supports product assembly, inspection and system testing to help ensure
+            dependable performance in marine applications.
           </p>
         </div>
       </section>
