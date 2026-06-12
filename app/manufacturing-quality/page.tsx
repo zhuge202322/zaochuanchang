@@ -3,6 +3,11 @@ import { CheckCircle2 } from "lucide-react";
 import { SectionHeading } from "@/components/SectionHeading";
 import { factoryGallery, processSteps } from "@/lib/site-data";
 
+const qualitySteps = [
+  ...processSteps,
+  "Ready for shipment and project support",
+];
+
 export const metadata = {
   title: "Manufacturing & Quality",
   description:
@@ -64,7 +69,7 @@ export default function ManufacturingQualityPage() {
             text="The process is written for real sales and engineering communication: identify the duty point, confirm the model and test before packing."
           />
           <div className="process-grid">
-            {processSteps.map((step, index) => (
+            {qualitySteps.map((step, index) => (
               <div className="process-step" key={step}>
                 <span>{String(index + 1).padStart(2, "0")}</span>
                 <strong>{step}</strong>
@@ -74,7 +79,7 @@ export default function ManufacturingQualityPage() {
         </div>
       </section>
 
-      <section className="section section--dark">
+      <section className="section section--dark inspection-band">
         <div className="shell split">
           <div>
             <SectionHeading
@@ -95,6 +100,9 @@ export default function ManufacturingQualityPage() {
               </li>
             ))}
           </ul>
+          <span className="inspection-band__image">
+            <Image src="/images/products/product-46-c.jpg" alt="Control cabinet inspection wiring" fill sizes="(max-width: 860px) 100vw, 36vw" />
+          </span>
         </div>
       </section>
     </main>

@@ -30,6 +30,18 @@ export type Solution = {
   productSlugs: string[];
 };
 
+export type Metric = {
+  value: string;
+  label: string;
+  text: string;
+};
+
+export type SystemLane = {
+  code: string;
+  title: string;
+  text: string;
+};
+
 export const companyProfile = {
   name: "Taizhou Jiabo You Want Import and Export Trading Co., Ltd.",
   chineseName: "泰州市佳博有望进出口贸易有限公司",
@@ -39,6 +51,29 @@ export const companyProfile = {
   profile:
     "Taizhou Jiabo Technology Co., Ltd. has nearly a decade of experience in R&D and manufacturing of marine accessories and automation instruments, covering pressure gauges, sensors, thermometers, heaters, valves, flow meters, alarms and monitoring systems. Jiabo You Want is the newly established international trade division focused on overseas markets, offering both standard products and customized solutions for specific client requirements.",
 };
+
+export const companyMetrics: Metric[] = [
+  {
+    value: "10+",
+    label: "Years of Experience",
+    text: "R&D and manufacturing experience",
+  },
+  {
+    value: "47+",
+    label: "Countries & Regions",
+    text: "Served worldwide",
+  },
+  {
+    value: "23+",
+    label: "Product & Software",
+    text: "Copyrights",
+  },
+  {
+    value: "OEM",
+    label: "Custom Solutions",
+    text: "Support for OEMs",
+  },
+];
 
 export const categories: Category[] = [
   {
@@ -771,7 +806,8 @@ export const solutions: Solution[] = [
   {
     slug: "tank-level-monitoring",
     title: "Tank Level Monitoring",
-    subtitle: "Visual gauges, float controllers, pressure type transmitters and telemetry cabinets for vessel tank level work.",
+    subtitle:
+      "Level gauges, level controllers, pressure-type transmitters and telemetry cabinets for ballast tanks, fuel tanks and service water systems.",
     image: "/images/factory/factory-19.jpg",
     checkpoints: [
       "Local visual level plus remote level signal can be combined",
@@ -787,8 +823,9 @@ export const solutions: Solution[] = [
   },
   {
     slug: "valve-remote-control",
-    title: "Valve Remote Control",
-    subtitle: "Electric, pneumatic and hydraulic valve packages connected to project specific control panels and feedback loops.",
+    title: "Valve Remote Control System",
+    subtitle:
+      "Electric, pneumatic and hydraulic valve packages with control panels, feedback units and project-specific connection drawings.",
     image: "/images/products/product-46-b.jpg",
     checkpoints: [
       "Actuator choice follows vessel air, hydraulic or electrical supply",
@@ -805,7 +842,8 @@ export const solutions: Solution[] = [
   {
     slug: "machinery-pressure-temperature",
     title: "Machinery Pressure & Temperature Monitoring",
-    subtitle: "A complete field layer of gauges, transmitters, thermometers and controllers for engine room equipment.",
+    subtitle:
+      "Pressure gauges, transmitters, thermometers and controllers for engine room equipment and auxiliary machinery.",
     image: "/images/factory/factory-09.jpg",
     checkpoints: [
       "Local indication is paired with electrical feedback where control rooms need signals",
@@ -821,8 +859,9 @@ export const solutions: Solution[] = [
   },
   {
     slug: "pipeline-detection",
-    title: "Pipeline Detection & Flow Safety",
-    subtitle: "Oil content detection, flow measurement, door state and safety field devices for protected marine routes.",
+    title: "Pipeline Monitoring & Flow Safety",
+    subtitle:
+      "Oil content detection, flow measurement, leakage monitoring and safety field devices for protected marine pipeline routes.",
     image: "/images/products/product-44.jpg",
     checkpoints: [
       "Detection devices are selected by medium, pipe route and signal circuit",
@@ -835,6 +874,34 @@ export const solutions: Solution[] = [
       "door-switch-sensor",
       "explosion-proof-button-junction-box",
     ],
+  },
+];
+
+export const systemLanes: SystemLane[] = [
+  {
+    code: "ENG",
+    title: "Engine Room Monitoring",
+    text: "Pressure, temperature, alarm and control cabinet feedback devices for machinery spaces and auxiliary equipment.",
+  },
+  {
+    code: "TNK",
+    title: "Tank Level Monitoring",
+    text: "Level gauges, float controllers, transmitters and telemetry solutions for ballast, fuel and service water tanks.",
+  },
+  {
+    code: "DCK",
+    title: "Deck Pipeline Systems",
+    text: "Valves, junction boxes and field devices for exposed deck pipelines and outdoor pipe routes.",
+  },
+  {
+    code: "VRC",
+    title: "Valve Remote Control",
+    text: "Pneumatic, hydraulic and electric actuators with control panels, feedback signals and connection drawings.",
+  },
+  {
+    code: "ALM",
+    title: "Alarm & Safety Monitoring",
+    text: "Oil content detection, door status signals and monitoring points for crew alerts and safety supervision.",
   },
 ];
 

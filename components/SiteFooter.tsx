@@ -42,9 +42,9 @@ export function SiteFooter() {
         <div>
           <h3>RFQ Notes</h3>
           <ul className="footer-notes">
-            <li>Model or old part photo</li>
-            <li>Medium, range and connection</li>
-            <li>Quantity and vessel project stage</li>
+            <li>Include model or old part photo</li>
+            <li>Specify medium, range, and connection</li>
+            <li>Provide quantity and vessel project stage</li>
           </ul>
         </div>
         <div>
@@ -53,10 +53,10 @@ export function SiteFooter() {
             <MapPin size={16} /> {companyProfile.address}
           </p>
           <Link className="footer-action" href="/contact">
-            <Mail size={16} /> Request a quote
+            <Mail size={16} /> Send Inquiry
           </Link>
           <a className="footer-action" href="/downloads/jiabo-you-want-product-profile.pdf" download>
-            <Download size={16} /> Download brochure
+            <Download size={16} /> Product Brochure
           </a>
         </div>
       </div>

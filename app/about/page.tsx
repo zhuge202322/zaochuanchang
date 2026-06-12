@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Factory, Ship, Wrench } from "lucide-react";
 import { SectionHeading } from "@/components/SectionHeading";
-import { companyProfile } from "@/lib/site-data";
+import { companyMetrics, companyProfile } from "@/lib/site-data";
 
 export const metadata = {
   title: "About Jiabo You Want",
@@ -42,22 +42,39 @@ export default function AboutPage() {
               View product center <ArrowRight size={18} />
             </Link>
           </div>
+          <div className="metric-strip__grid metric-strip__grid--about">
+            {companyMetrics.map((metric) => (
+              <div className="metric metric--light" key={metric.value}>
+                <strong>{metric.value}</strong>
+                <span>{metric.label}</span>
+                <small>{metric.text}</small>
+              </div>
+            ))}
+          </div>
           <div className="factory-showcase factory-showcase--about">
-            <span className="image-frame image-frame--wide">
+            <span className="image-frame image-frame--wide image-frame--caption">
               <Image
-                src="/images/factory/factory-09.jpg"
+                src="/images/factory/factory-01.jpg"
                 alt="Instrument assembly floor"
                 fill
                 sizes="(max-width: 860px) 100vw, 50vw"
               />
+              <span>
+                <strong>Workshop & Assembly Area</strong>
+                <small>Supporting product assembly, inspection and system testing.</small>
+              </span>
             </span>
-            <span className="image-frame image-frame--wide">
+            <span className="image-frame image-frame--wide image-frame--caption">
               <Image
                 src="/images/factory/factory-19.jpg"
                 alt="Inspection and control console room"
                 fill
                 sizes="(max-width: 860px) 100vw, 50vw"
               />
+              <span>
+                <strong>Inspection & Test Area</strong>
+                <small>Dedicated testing and calibration environment for product verification.</small>
+              </span>
             </span>
           </div>
         </div>

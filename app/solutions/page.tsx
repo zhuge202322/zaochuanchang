@@ -17,7 +17,7 @@ export default function SolutionsPage() {
       <section className="page-hero">
         <div className="page-hero__image">
           <Image
-            src="/images/factory/factory-19.jpg"
+            src="/images/factory/factory-14.jpg"
             alt="Jiabo test room and control consoles"
             fill
             preload
@@ -29,35 +29,37 @@ export default function SolutionsPage() {
           <p className="eyebrow">Solutions</p>
           <h1>Application-Based Solutions for Shipboard Monitoring, Control & Alarm Systems</h1>
           <p>
-            Each solution brings together the instruments, sensors, valves and control cabinets required for specific onboard applications.
+            Built to help ship operators and system integrators achieve safer operations and smarter control.
           </p>
         </div>
       </section>
 
       <section className="section section--white">
-        <div className="shell">
-          <SectionHeading
-            eyebrow="Application packages"
-            title="Application-Based Solutions for Shipboard Monitoring, Control & Alarm Systems"
-            text="Each solution brings together the instruments, sensors, valves and control cabinets required for specific onboard applications."
-          />
-          <div className="solution-grid">
+        <div className="shell solution-overview">
+          <div className="solution-overview__intro">
+            <SectionHeading
+              eyebrow="Marine applications"
+              title="Application-Based Solutions for Shipboard Monitoring, Control & Alarm Systems"
+              text="Discover integrated solutions for tanks, valves, machinery, and safety systems, all engineered for marine environments."
+            />
+          </div>
+          <div className="solution-grid solution-grid--overview">
             {solutions.map((solution) => (
               <article className="solution-card" id={solution.slug} key={solution.slug}>
                 <span className="solution-card__image">
                   <Image src={solution.image} alt={solution.title} fill sizes="(max-width: 1100px) 100vw, 50vw" />
                 </span>
                 <div className="solution-card__body">
-                  <span className="eyebrow">Marine solution</span>
+                  <span className="eyebrow">{solution.title}</span>
                   <h3>{solution.title}</h3>
                   <p>{solution.subtitle}</p>
                   <ul>
-                    {solution.checkpoints.map((checkpoint) => (
+                    {solution.checkpoints.slice(0, 2).map((checkpoint) => (
                       <li key={checkpoint}>{checkpoint}</li>
                     ))}
                   </ul>
                   <Link className="product-card__link" href="/contact">
-                    Discuss this solution <ArrowRight size={16} />
+                    View Solution <ArrowRight size={16} />
                   </Link>
                 </div>
               </article>
@@ -67,29 +69,46 @@ export default function SolutionsPage() {
       </section>
 
       {solutions.map((solution) => {
-        const solutionProducts = getProductsBySlugs(solution.productSlugs);
+        const solutionProducts = getProductsBySlugs(solution.productSlugs).slice(0, 4);
         return (
-          <section className="section" key={`${solution.slug}-products`}>
-            <div className="shell">
-              <div className="category-top">
+          <section className="section solution-product-row" key={`${solution.slug}-products`}>
+            <div className="shell solution-product-row__grid">
+              <div className="solution-product-row__intro">
                 <div>
-                  <p className="eyebrow">Linked products</p>
+                  <p className="eyebrow">{solution.slug.replaceAll("-", " ")}</p>
                   <h2>{solution.title}</h2>
                 </div>
-                <p>
-                  The recommended product set below is a starting point. Final selection should follow
-                  drawings, model plates, medium data, range and connection requirements.
-                </p>
+                <p>{solution.subtitle}</p>
+                <Link className="btn btn--dark" href="/products">
+                  View All Products <ArrowRight size={18} />
+                </Link>
               </div>
-              <div className="product-grid">
+              <div className="product-grid product-grid--solution">
                 {solutionProducts.map((product) => (
-                  <ProductCard key={product.slug} product={product} />
+                  <ProductCard key={product.slug} product={product} variant="mini" />
                 ))}
               </div>
             </div>
           </section>
         );
       })}
+
+      <section className="section section--dark solution-benefits">
+        <div className="shell solution-benefits__grid">
+          {[
+            ["Tailored Solutions", "Engineered to meet the unique needs of your vessel."],
+            ["Marine-Grade Quality", "Built for performance in tough marine environments."],
+            ["Global Support", "Fast response and reliable after-sales service."],
+            ["Expert Team", "Experienced engineers supporting your success."],
+          ].map(([title, text]) => (
+            <article key={title}>
+              <CheckCircle2 size={26} />
+              <h3>{title}</h3>
+              <p>{text}</p>
+            </article>
+          ))}
+        </div>
+      </section>
 
       <section className="section section--dark">
         <div className="shell split">
@@ -102,9 +121,10 @@ export default function SolutionsPage() {
           </div>
           <ul className="proof-list">
             {[
-              "Valve feedback and tank level points listed before cabinet layout",
-              "Sensor output and alarm logic confirmed before production",
-              "Inspection records and product photos used in export communication",
+              "Pre-configured and tested control cabinets",
+              "Wiring and system integration per device list",
+              "Reliable performance in marine environments",
+              "Customized to your project needs",
             ].map((item) => (
               <li key={item}>
                 <CheckCircle2 size={19} />
