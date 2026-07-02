@@ -27,7 +27,7 @@ export function SiteFooter() {
               <small>{companyProfile.descriptor}</small>
             </span>
           </Link>
-          <p>{companyProfile.profile}</p>
+          <p>{companyProfile.footerProfile}</p>
         </div>
         <div>
           <h3>Navigation</h3>
@@ -40,11 +40,12 @@ export function SiteFooter() {
           </nav>
         </div>
         <div>
-          <h3>RFQ Notes</h3>
+          <h3>RFQ Checklist</h3>
           <ul className="footer-notes">
-            <li>Include model or old part photo</li>
-            <li>Specify medium, range, and connection</li>
-            <li>Provide quantity and vessel project stage</li>
+            <li>Product model or nameplate photo</li>
+            <li>Medium, pressure/range, signal, and connection</li>
+            <li>Quantity and application</li>
+            <li>Drawing, old part photo, or project point list if available</li>
           </ul>
         </div>
         <div>
@@ -56,7 +57,7 @@ export function SiteFooter() {
             <Mail size={16} /> Send Inquiry
           </Link>
           <a className="footer-action" href="/downloads/jiabo-you-want-product-profile.pdf" download>
-            <Download size={16} /> Product Brochure
+            <Download size={16} /> Product Catalog
           </a>
         </div>
       </div>

@@ -45,7 +45,7 @@ export function SiteHeader() {
           ))}
         </nav>
         <a className="header-download" href="/downloads/jiabo-you-want-product-profile.pdf" download>
-          <Download size={16} /> Download Brochure
+          <Download size={16} /> Download Catalog
         </a>
         <Link className="header-cta" href="/contact">
           <Mail size={16} /> Request a Quote
@@ -68,7 +68,7 @@ export function SiteHeader() {
             </Link>
           ))}
           <a href="/downloads/jiabo-you-want-product-profile.pdf" download onClick={() => setOpen(false)}>
-            Download Brochure
+            Download Catalog
           </a>
           <Link href="/contact" onClick={() => setOpen(false)}>
             Request a Quote

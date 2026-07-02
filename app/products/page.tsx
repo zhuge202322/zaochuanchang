@@ -41,17 +41,17 @@ export default function ProductsPage() {
         </div>
         <div className="shell page-hero__content">
           <p className="eyebrow">Product center</p>
-          <h1>Marine Instruments, Valves & Control Systems</h1>
+          <h1>Marine Instruments, Valves & Automation Components</h1>
           <p>
-            High-quality marine instrumentation, valves and control systems trusted by shipbuilders
-            and vessel operators globally.
+            We provide marine-grade instruments, tank level products, valves, actuators, sensors,
+            and control systems for shipbuilding, repair, and vessel operation projects.
           </p>
           <div className="hero__actions">
             <Link className="btn btn--primary" href="/contact">
               <Mail size={18} /> Request a Quote
             </Link>
             <a className="btn btn--secondary" href="/downloads/jiabo-you-want-product-profile.pdf" download>
-              <Download size={18} /> View Brochure
+              <Download size={18} /> View Catalog
             </a>
           </div>
         </div>
@@ -105,16 +105,16 @@ export default function ProductsPage() {
             <p className="eyebrow">Resources</p>
             <h2>Access product information, catalogs, and certificates.</h2>
             <ul className="resource-list">
-              <li><FileText size={20} /> Product Brochures <small>Download detailed product catalogs.</small></li>
+              <li><FileText size={20} /> Product Catalogs <small>Download detailed product catalogs.</small></li>
               <li><ShieldCheck size={20} /> Technical Documents <small>Access manuals and datasheets.</small></li>
               <li><Mail size={20} /> RFQ Support <small>Submit requirements for quick response.</small></li>
             </ul>
             <a className="btn btn--primary" href="/downloads/jiabo-you-want-product-profile.pdf" download>
-              <Download size={18} /> Download Brochure
+              <Download size={18} /> Download Catalog
             </a>
           </div>
           <span className="product-resource-panel__cover">
-            <Image src="/images/brochure-cover.jpg" alt="Jiabo marine instrument solutions brochure" fill sizes="(max-width: 860px) 100vw, 54vw" />
+            <Image src="/images/brochure-cover.jpg" alt="Jiabo marine instrument product catalog" fill sizes="(max-width: 860px) 100vw, 54vw" />
           </span>
         </div>
       </section>

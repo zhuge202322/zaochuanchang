@@ -88,7 +88,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
               </div>
               <div className="hero__actions">
                 <Link className="btn btn--primary" href="/contact">
-                  <Mail size={18} /> Request quote
+                  <Mail size={18} /> Request a Quote
                 </Link>
                 <Link className="btn btn--secondary" href="/products">
                   Product center <ArrowRight size={18} />
@@ -105,8 +105,8 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
             <p className="eyebrow">Application fit</p>
             <h2>Where this product belongs on board</h2>
             <p>
-              The product detail page keeps the buying conversation focused on vessel position,
-              connection data and the control or monitoring task behind the part.
+              This product page keeps the buying conversation focused on the shipboard application,
+              connection data, and the control or monitoring task behind the part.
             </p>
           </div>
           <div className="spec-grid">

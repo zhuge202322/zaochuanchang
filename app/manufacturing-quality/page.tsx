@@ -30,10 +30,10 @@ export default function ManufacturingQualityPage() {
         </div>
         <div className="shell page-hero__content">
           <p className="eyebrow">Manufacturing & quality</p>
-          <h1>Reliable Assembly, Inspection & System Testing</h1>
+          <h1>Reliable Manufacturing, Inspection & System Testing for Marine Equipment</h1>
           <p>
-            Our workshop supports product assembly, inspection and system testing to help ensure
-            dependable performance in marine applications.
+            Our workshop supports product assembly, functional inspection, calibration checks, and
+            system testing to help ensure stable performance in marine applications.
           </p>
         </div>
       </section>
@@ -42,7 +42,7 @@ export default function ManufacturingQualityPage() {
         <div className="shell">
           <SectionHeading
             eyebrow="Factory gallery"
-            title="Visible production context behind the product range"
+            title="Workshop, Assembly & Inspection Capability"
             text="Photos show brand identity, assembly benches, control consoles, inspection areas and staged products for shipment."
           />
           <div className="factory-grid">
@@ -65,8 +65,8 @@ export default function ManufacturingQualityPage() {
         <div className="shell">
           <SectionHeading
             eyebrow="Quality workflow"
-            title="A practical inspection path for export RFQ projects"
-            text="The process is written for real sales and engineering communication: identify the duty point, confirm the model and test before packing."
+            title="Quality Control Process for Export Orders"
+            text="Our team confirms application details, product models, technical parameters, and inspection requirements before shipment."
           />
           <div className="process-grid">
             {qualitySteps.map((step, index) => (
@@ -84,8 +84,8 @@ export default function ManufacturingQualityPage() {
           <div>
             <SectionHeading
               eyebrow="Inspection culture"
-              title="The supplied factory photos include a dedicated inspection test area"
-              text="That detail becomes an important trust signal for buyers comparing marine instrumentation suppliers."
+              title="Dedicated Inspection and Testing Area"
+              text="The inspection area supports product checks, control cabinet review, and system-level verification for marine instrumentation projects."
             />
           </div>
           <ul className="proof-list">

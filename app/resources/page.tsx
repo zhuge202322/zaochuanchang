@@ -7,7 +7,7 @@ import { companyProfile } from "@/lib/site-data";
 export const metadata = {
   title: "Resources",
   description:
-    `Product brochure, company documents, RFQ checklist and selection notes for ${companyProfile.shortName}.`,
+    `Product catalogs, company documents, RFQ checklist and selection notes for ${companyProfile.shortName}.`,
 };
 
 export default function ResourcesPage() {
@@ -27,29 +27,29 @@ export default function ResourcesPage() {
         <div className="shell page-hero__content">
           <div className="resources-hero__copy">
             <p className="eyebrow">Resources</p>
-            <h1>Brochures, Documents & RFQ Support</h1>
+            <h1>Product Catalogs, Company Documents & RFQ Support</h1>
             <p>
               Download product information, explore our company capabilities, or send us your
               requirements for faster product matching.
             </p>
             <div className="hero-mini-points">
               <span><Download size={20} /> Fast Access <small>Instant downloads</small></span>
-              <span><ShieldCheck size={20} /> Trusted Info <small>Official documents</small></span>
+              <span><ShieldCheck size={20} /> Verified Company Information <small>Company Documents</small></span>
               <span><Zap size={20} /> RFQ Support <small>Quick response</small></span>
             </div>
           </div>
-          <div className="resources-hero__panel" aria-label="Download brochure preview">
-            <span className="resources-hero__tag">Product profile</span>
+          <div className="resources-hero__panel" aria-label="Download product catalog preview">
+            <span className="resources-hero__tag">Product catalog</span>
             <span className="resources-hero__cover">
               <Image
                 src="/images/brochure-cover.jpg"
-                alt="Jiabo product brochure cover"
+                alt="Jiabo product catalog cover"
                 fill
                 sizes="(max-width: 860px) 52vw, 250px"
               />
             </span>
             <a href="/downloads/jiabo-you-want-product-profile.pdf" download>
-              <Download size={16} /> Download Brochure
+              <Download size={16} /> Download Catalog
             </a>
           </div>
         </div>
@@ -59,13 +59,13 @@ export default function ResourcesPage() {
         <div className="shell resource-row">
           <SectionHeading
             eyebrow="Downloads for buyers"
-            title="Fast materials for the first export conversation"
+            title="Download Product Information for Your Sourcing Evaluation"
             text="Key materials to help you quickly understand our products, capabilities and support."
           />
           <div className="resource-grid resource-grid--row">
             <a className="resource-card" href="/downloads/jiabo-you-want-product-profile.pdf" download>
               <Images size={30} />
-              <h3>Product Pictures</h3>
+              <h3>Product Images</h3>
               <p>Download product and application photos for faster model discussion.</p>
               <span className="product-card__link">View & Download <ArrowLink /></span>
             </a>
@@ -88,8 +88,8 @@ export default function ResourcesPage() {
       <section className="section section--soft">
         <div className="shell resource-row resource-row--soft">
           <SectionHeading
-            eyebrow="Help you match faster"
-            title="Information that shortens product matching"
+            eyebrow="Selection support"
+            title="Information Required for Faster Product Selection"
             text="Technical, identification and interface data support evaluation and decision-making."
           />
           <div className="resource-grid resource-grid--row">

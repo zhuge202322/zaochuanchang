@@ -84,23 +84,23 @@ export default function AboutPage() {
         <div className="shell">
           <SectionHeading
             eyebrow="What the site communicates"
-            title="A supplier profile built around product truth and factory context"
-            text="The website avoids generic corporate filler. It presents the brand through the catalog scope, vessel applications and visible manufacturing evidence."
+            title="A Marine Equipment Supplier Backed by Manufacturing and Inspection Capabilities"
+            text="Our export supply service is supported by product manufacturing experience, inspection resources, and application-focused product matching for marine projects."
           />
           <div className="resource-grid">
             <article className="resource-card">
               <Ship size={28} />
-              <h3>Ship parts foreign trade</h3>
+              <h3>Marine Equipment Export Supply</h3>
               <p>Jiabo You Want focuses on overseas market communication, sourcing coordination and export product delivery.</p>
             </article>
             <article className="resource-card">
               <Factory size={28} />
-              <h3>Factory photography as proof</h3>
-              <p>Workshop and inspection images are treated as core content rather than background decoration.</p>
+              <h3>Factory & Inspection Capability</h3>
+              <p>Workshop and inspection images show the manufacturing and verification environment behind our supply service.</p>
             </article>
             <article className="resource-card">
               <Wrench size={28} />
-              <h3>Standard and customized supply</h3>
+              <h3>Standard Products and Customized Solutions</h3>
               <p>Standard products and customized marine accessories can be matched to specific client requirements.</p>
             </article>
           </div>

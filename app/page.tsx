@@ -40,10 +40,10 @@ export default function Home() {
         <div className="shell hero__content">
           <div className="hero__copy">
             <p className="eyebrow">Reliable marine automation solutions</p>
-            <h1>Reliable Marine Automation Solutions, Tailored to Your Vessel</h1>
+            <h1>Marine Instruments, Valves & Control Systems for Shipboard Applications</h1>
             <p>
-              Delivering precision instruments, valves, and control systems with reliable
-              performance, global standards and trusted support worldwide.
+              We supply marine pressure gauges, level instruments, valves, sensors, and control
+              cabinets for shipyards, vessel operators, and marine engineering projects worldwide.
             </p>
             <div className="hero__actions">
               <Link className="btn btn--primary" href="/products">
@@ -53,7 +53,7 @@ export default function Home() {
                 <Mail size={18} /> Request a Quote
               </Link>
               <a className="btn btn--secondary" href="/downloads/jiabo-you-want-product-profile.pdf" download>
-                <Download size={18} /> Download Brochure
+                <Download size={18} /> Download Catalog
               </a>
             </div>
           </div>
@@ -102,17 +102,17 @@ export default function Home() {
         <div className="shell resource-band__grid">
           <div>
             <p className="eyebrow">Resources</p>
-            <h2>Brochures, Documents & RFQ Support</h2>
+            <h2>Product Catalogs, Company Documents & RFQ Support</h2>
             <p>
               Download product information, explore our company capabilities, or send us your
               requirements for faster product matching.
             </p>
             <a className="btn btn--secondary" href="/downloads/jiabo-you-want-product-profile.pdf" download>
-              <Download size={18} /> Download Brochure
+              <Download size={18} /> Download Catalog
             </a>
           </div>
           <span className="resource-band__cover">
-            <Image src="/images/brochure-cover.jpg" alt="Jiabo product brochure cover" fill sizes="(max-width: 860px) 100vw, 44vw" />
+            <Image src="/images/brochure-cover.jpg" alt="Jiabo product catalog cover" fill sizes="(max-width: 860px) 100vw, 44vw" />
           </span>
         </div>
       </section>

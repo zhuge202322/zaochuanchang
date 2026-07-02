@@ -24,9 +24,11 @@ export default function ContactPage() {
         </div>
         <div className="shell page-hero__content">
           <p className="eyebrow">Contact & RFQ</p>
-          <h1>Send the vessel position, model details and project requirement</h1>
+          <h1>Send Your Marine Equipment Inquiry</h1>
           <p>
-            Jiabo You Want supports overseas inquiries for standard products and customized marine accessories.
+            Please share the product model, application, technical parameters, quantity, and
+            available photos or drawings. Our team will help confirm the suitable product or
+            project configuration.
           </p>
         </div>
       </section>
@@ -49,10 +51,10 @@ export default function ContactPage() {
             </div>
             <div className="contact-line">
               <Wrench size={20} />
-              <span>Useful attachments: old part photo, nameplate, drawing, point list or installation position</span>
+              <span>Recommended Attachments: nameplate photo, existing product photo, technical drawing, connection size, signal requirements, or project point list.</span>
             </div>
             <a className="btn btn--dark" href="/downloads/jiabo-you-want-product-profile.pdf" download>
-              <Download size={18} /> Download brochure
+              <Download size={18} /> Download Catalog
             </a>
           </aside>
 
@@ -72,11 +74,11 @@ export default function ContactPage() {
                 <input id="email" name="email" type="email" placeholder="name@company.com" />
               </div>
               <div className="field">
-                <label htmlFor="country">Country / region</label>
+                <label htmlFor="country">Country / Region</label>
                 <input id="country" name="country" type="text" placeholder="Project market" />
               </div>
               <div className="field">
-                <label htmlFor="product">Product type</label>
+                <label htmlFor="product">Product Category</label>
                 <select id="product" name="product" defaultValue="">
                   <option value="" disabled>
                     Select product family
@@ -93,7 +95,7 @@ export default function ContactPage() {
                 <input id="quantity" name="quantity" type="text" placeholder="Pieces or sets" />
               </div>
               <div className="field field--full">
-                <label htmlFor="details">Technical details</label>
+                <label htmlFor="details">Technical Requirements</label>
                 <textarea
                   id="details"
                   name="details"
@@ -103,9 +105,12 @@ export default function ContactPage() {
             </div>
             <div className="form-actions">
               <button className="btn btn--primary" type="button">
-                <Send size={18} /> Prepare inquiry
+                <Send size={18} /> Submit Inquiry
               </button>
-              <span className="form-note">Recommended attachments: nameplate, old part photo, drawing or point list.</span>
+              <span className="form-note">
+                Recommended Attachments: nameplate photo, existing product photo, technical drawing,
+                connection size, signal requirements, or project point list.
+              </span>
             </div>
           </form>
         </div>

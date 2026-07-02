@@ -49,29 +49,31 @@ export const companyProfile = {
   descriptor: "Marine Equipment Export & Supply",
   address: "Room 336, Qituo Building, No. 8 Suzhou Road, Sanshui Subdistrict, Taizhou, Jiangsu, China",
   profile:
-    "Taizhou Jiabo Technology Co., Ltd. has nearly a decade of experience in R&D and manufacturing of marine accessories and automation instruments, covering pressure gauges, sensors, thermometers, heaters, valves, flow meters, alarms and monitoring systems. Jiabo You Want is the newly established international trade division focused on overseas markets, offering both standard products and customized solutions for specific client requirements.",
+    "Taizhou Jiabo Technology Co., Ltd. has nearly 10 years of experience in the R&D and manufacturing of marine instruments, accessories, and automation products. Our product range covers pressure gauges, sensors, thermometers, heaters, valves, flow meters, alarms, and monitoring systems. JIABO You Want serves as the international trade division for overseas markets, providing standard products, replacement parts, and project-based customized solutions for shipyards, vessel operators, marine engineering companies, and equipment distributors.",
+  footerProfile:
+    "JIABO You Want supplies marine instruments, level measurement products, valves, sensors, alarms, and control systems for shipbuilding, repair, and vessel operation projects. We support model matching, replacement supply, OEM customization, and project-based technical coordination for overseas customers.",
 };
 
 export const companyMetrics: Metric[] = [
   {
     value: "10+",
-    label: "Years of Experience",
-    text: "R&D and manufacturing experience",
+    label: "Years of R&D and Manufacturing Experience",
+    text: "Marine instruments and automation products",
   },
   {
     value: "47+",
-    label: "Countries & Regions",
-    text: "Served worldwide",
+    label: "Countries and Regions",
+    text: "Exported to 47+ Countries and Regions",
   },
   {
     value: "23+",
-    label: "Product & Software",
-    text: "Copyrights",
+    label: "Intellectual Property Records",
+    text: "Product and software records",
   },
   {
     value: "OEM",
-    label: "Custom Solutions",
-    text: "Support for OEMs",
+    label: "& Project-Based Customization",
+    text: "Model matching and tailored supply",
   },
 ];
 
@@ -142,7 +144,7 @@ export const products: Product[] = [
     model: "YC-100-N radial, rimless",
     image: "/images/products/product-01.jpg",
     summary:
-      "A marine pressure gauge for local visual pressure reading on pumps, filters, lubricating oil and cooling water lines.",
+      "A vibration-resistant marine pressure gauge designed for on-site pressure indication on pumps, filters, lubricating oil lines, cooling water lines, and other shipboard machinery systems.",
     tags: ["Dial reading", "Radial mount", "Marine pressure"],
     applications: ["Pump discharge", "Fuel and lube oil service", "Cooling water branch lines"],
     specs: [
@@ -216,7 +218,7 @@ export const products: Product[] = [
     specs: [
       { label: "Housing", value: "Metal protected body" },
       { label: "Reading", value: "Direct local indication" },
-      { label: "Selection", value: "Range and connection matched to vessel position" },
+      { label: "Selection", value: "Range and connection matched to the shipboard application" },
       ...sharedMarineSpecs,
     ],
   },
@@ -386,7 +388,7 @@ export const products: Product[] = [
     model: "YSZK-01L side mounted",
     image: "/images/products/product-16.jpg",
     summary:
-      "A side mounted pressure type level transmitter for tanks where access or installation geometry favors side entry.",
+      "A side-mounted pressure type level transmitter designed for marine tanks where side installation is required due to tank structure, access limitations, or retrofit conditions.",
     tags: ["Side mount", "Tank level", "Signal"],
     applications: ["Service tanks", "Retrofit tanks", "Compact machinery spaces"],
     specs: [
@@ -939,7 +941,7 @@ export const factoryGallery = [
 ];
 
 export const processSteps = [
-  "Confirm vessel position, medium, signal and connection",
+  "Confirm application, medium, signal and connection",
   "Match existing model or propose a project configuration",
   "Assemble instruments, valves or cabinet interfaces",
   "Run inspection tests and visual checks before packing",
