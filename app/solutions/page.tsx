@@ -17,8 +17,8 @@ export default function SolutionsPage() {
       <section className="page-hero">
         <div className="page-hero__image">
           <Image
-            src="/images/factory/factory-14.jpg"
-            alt="Jiabo test room and control consoles"
+            src="/images/products/product-47-c.jpg"
+            alt="Marine control cabinet panel for monitoring and alarm systems"
             fill
             preload
             loading="eager"
