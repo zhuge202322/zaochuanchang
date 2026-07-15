@@ -16,8 +16,8 @@ export default function ResourcesPage() {
       <section className="page-hero page-hero--resources">
         <div className="page-hero__image">
           <Image
-            src="/images/factory/factory-19.jpg"
-            alt="Marine inspection room and control equipment"
+            src="/images/factory/factory-08.jpg"
+            alt="Jiabo workshop with overhead crane and production floor"
             fill
             preload
             loading="eager"

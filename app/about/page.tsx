@@ -16,8 +16,8 @@ export default function AboutPage() {
       <section className="page-hero">
         <div className="page-hero__image">
           <Image
-            src="/images/factory/factory-08.jpg"
-            alt="Jiabo workshop with overhead crane and production floor"
+            src="/images/factory/factory-06.jpg"
+            alt="Jiabo factory brand wall"
             fill
             preload
             loading="eager"
